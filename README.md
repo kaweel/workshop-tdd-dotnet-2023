@@ -1,1 +1,1 @@
-# workshop-tdd-dotnet-2023.
+# workshop-tdd-dotnet-2023
