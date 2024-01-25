@@ -1,11 +1,14 @@
 {
     "folders": [
         {
-            "path": "basics"
+            "path": "workshop-tdd-dotnet.code-workspace"
         },
         {
-            "path": "exercise"
-        }
+            "path": "basics"
+        },
+	{
+	    "path": "di"
+	}
     ],
     "settings": {}
 }
