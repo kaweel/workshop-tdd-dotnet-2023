@@ -1,16 +1,13 @@
 namespace di.example;
 
-public interface IPaymentService
-{
-    string PayByOrderNumber(string orderNumber);
-}
 
-public class PaymentService : IPaymentService
-{
-    private IPayment _payment;
-    private IOrderService _orderService;
 
-    public PaymentService(IPayment payment, IOrderService orderService)
+public class PaymentService
+{
+    private readonly IPayment _payment;
+    private readonly OrderService _orderService;
+
+    public PaymentService(IPayment payment, OrderService orderService)
     {
         _payment = payment;
         _orderService = orderService;

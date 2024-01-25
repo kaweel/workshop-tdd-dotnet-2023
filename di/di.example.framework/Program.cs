@@ -1,4 +1,3 @@
-using di.example;
 using di.example.framework;
 
 var builder = Host.CreateApplicationBuilder(args);

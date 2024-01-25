@@ -1,10 +1,5 @@
 namespace di.example;
-
-public interface IOrderService
-{
-    decimal GetOutstandingBalance(string orderNumber);
-}
-public class OrderService : IOrderService
+public class OrderService
 {
     public decimal GetOutstandingBalance(string orderNumber)
     {
