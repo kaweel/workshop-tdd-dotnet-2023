@@ -20,7 +20,7 @@ public class PaymentService : IPaymentService
     {
         var validOrderNumber = _orderService.GetOutstandingBalance(orderNumber);
         if (!validOrderNumber)
-            throw new NotSupportedException();
+            throw new Exception("invalid order number");
         return _paymentFactory.GetPayment(channel).Pay(amount);
     }
 }
