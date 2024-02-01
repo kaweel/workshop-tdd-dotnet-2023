@@ -18,7 +18,7 @@ public class PaymentService_PayByOrderNumberTest
 
     // payment fail with order number 001 by channel Promptpay
     // input order number 001, channel promptpay, amount 100
-    // output "Pay 100 via Promptpay success"
+    // output thorw exception "payment Promptpay fail"
 
     // payment success with order number 001 by channel CreditCard
     // input order number 001, channel promptpay, amount 100
@@ -26,7 +26,7 @@ public class PaymentService_PayByOrderNumberTest
 
     // payment fail with order number 001 by channel CreditCard
     // input order number 001, channel promptpay, amount 100
-    // output $"Pay 100 via CreditCard success"
+    // output thorw exception "payment CreditCard fail"
 
     // payment success with order number 001 by channel E-Wallet
     // input order number 001, channel promptpay, amount 100
@@ -34,5 +34,5 @@ public class PaymentService_PayByOrderNumberTest
 
     // payment fail with order number 001 by channel E-Wallet
     // input order number 001, channel promptpay, amount 100
-    // output $"Pay 100 via E-Wallet success"
+    // output thorw exception "payment E-Wallet fail"
 }
